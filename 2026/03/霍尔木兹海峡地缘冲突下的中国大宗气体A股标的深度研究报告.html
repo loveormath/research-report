@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>霍尔木兹海峡地缘冲突下的中国大宗气体A股标的深度研究报告</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: #FFFFFF;
+        }
+        .card {
+            background-color: white;
+            border: 1px solid #E5E7EB;
+            border-radius: 1.25rem; /* 20px */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            overflow: hidden;
+            position: relative;
+        }
+        .card:hover {
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        }
+        .highlight-gradient-blue { background: linear-gradient(135deg, rgba(59, 130, 246, 0), rgba(59, 130, 246, 0.05)); }
+        .highlight-gradient-purple { background: linear-gradient(135deg, rgba(168, 85, 247, 0), rgba(168, 85, 247, 0.05)); }
+        .highlight-gradient-teal { background: linear-gradient(135deg, rgba(20, 184, 166, 0), rgba(20, 184, 166, 0.05)); }
+        .highlight-gradient-amber { background: linear-gradient(135deg, rgba(245, 158, 11, 0), rgba(245, 158, 11, 0.05)); }
+        .highlight-gradient-red { background: linear-gradient(135deg, rgba(239, 68, 68, 0), rgba(239, 68, 68, 0.05)); }
+        .text-balance { text-wrap: balance; }
+    </style>
+</head>
+<body class="bg-white">
+    <div class="max-w-7xl mx-auto p-4 md:p-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6">
+            <!-- 标题卡片 -->
+            <div class="card md:col-span-4 p-8 flex flex-col justify-center relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-blue"></div>
+                <div class="relative">
+                    <div class="flex items-center gap-3 text-blue-500 mb-4">
+                        <i class="fa-solid fa-gas-pump fa-2x"></i>
+                        <div class="text-sm font-semibold tracking-widest">STRATEGIC RESEARCH</div>
+                    </div>
+                    <h1 class="text-3xl md:text-5xl font-bold text-gray-800 mb-3 leading-tight">霍尔木兹海峡地缘冲突下的中国大宗气体A股标的深度研究报告</h1>
+                    <p class="text-lg text-gray-500">氦气供应链冲击与AI芯片产业链重构</p>
+                </div>
+            </div>
+
+            <!-- 摘要卡片 -->
+            <div class="card md:col-span-4 p-8 flex flex-col relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-purple"></div>
+                <div class="relative">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">摘要</h2>
+                    <p class="text-gray-600 leading-relaxed mb-4">
+                        本报告聚焦2025年12月至2026年3月的时间窗口，深入分析霍尔木兹海峡地缘冲突引发的氦气供应链危机，对中国大宗气体A股标的及AI芯片产业链的系统性影响。2026年2月28日美以联合军事打击伊朗，触发伊朗对霍尔木兹海峡的实质封锁，直接切断全球约33%氦气产能的核心输出通道。
+                    </p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                        <div class="bg-purple-50 rounded-lg p-4 border border-purple-100">
+                            <p class="font-semibold text-purple-800">A股标的分化显著</p>
+                            <p class="text-sm text-purple-600 mt-1">广钢气体双增15%+，华特气体股价暴涨65.8%</p>
+                        </div>
+                        <div class="bg-purple-50 rounded-lg p-4 border border-purple-100">
+                            <p class="font-semibold text-purple-800">短期供应风险传导</p>
+                            <p class="text-sm text-purple-600 mt-1">头部企业可覆盖3个月需求，部分芯片产线减产30%</p>
+                        </div>
+                        <div class="bg-purple-50 rounded-lg p-4 border border-purple-100">
+                            <p class="font-semibold text-purple-800">长期供应链重构</p>
+                            <p class="text-sm text-purple-600 mt-1">预计2027年自给率提升至40%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 地缘冲突时间线 -->
+            <div class="card md:col-span-2 p-8 flex flex-col relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-red"></div>
+                <div class="relative">
+                    <h2 class="text-xl font-bold text-gray-800 mb-6">霍尔木兹海峡冲突时间线</h2>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-20 text-sm font-semibold text-red-600">2025.12</div>
+                            <div class="flex-1 border-l-2 border-red-200 pl-4 pb-4">
+                                <p class="text-gray-700">美军增派航母战斗群，全球氦气现货价格提前上涨约15%。</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-20 text-sm font-semibold text-red-600">2026.02.28</div>
+                            <div class="flex-1 border-l-2 border-red-200 pl-4 pb-4">
+                                <p class="text-gray-700">美以联军打击伊朗，伊朗宣布对海峡实施"预防性管控"。</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-20 text-sm font-semibold text-red-600">2026.03.03</div>
+                            <div class="flex-1 border-l-2 border-red-200 pl-4 pb-4">
+                                <p class="text-gray-700">卡塔尔能源宣布拉斯拉凡工业城所有氦气生产设施进入"不可抗力停产"。</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-20 text-sm font-semibold text-red-600">2026.03月中</div>
+                            <div class="flex-1 pl-4">
+                                <p class="text-gray-700">伊朗无人机空袭拉斯拉凡工业城，导致卡塔尔氦气年出口量永久减少14%。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 全球氦气供应结构 -->
+            <div class="card md:col-span-2 p-8 flex flex-col relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-amber"></div>
+                <div class="relative flex flex-col h-full">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">全球氦气供应结构 (2025)</h2>
+                    <div class="flex-grow h-[200px]">
+                        <canvas id="supplyChart"></canvas>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-4 text-center">美国与卡塔尔合计占据全球75%的产能，供应结构高度集中。</p>
+                </div>
+            </div>
+
+            <!-- 中国进口结构 -->
+            <div class="card md:col-span-2 p-8 flex flex-col relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-teal"></div>
+                <div class="relative flex flex-col h-full">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">中国氦气进口结构变化</h2>
+                    <div class="flex-grow h-[200px]">
+                        <canvas id="importChart"></canvas>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-4 text-center">2026年1-2月，俄罗斯已取代卡塔尔成为中国第一大氦气进口来源国。</p>
+                </div>
+            </div>
+
+            <!-- 氦气价格 -->
+            <div class="card md:col-span-2 p-8 flex flex-col justify-center relative">
+                 <div class="absolute top-0 left-0 w-full h-full highlight-gradient-amber"></div>
+                <div class="relative">
+                    <h2 class="text-xl font-bold text-gray-800 mb-2">国内管束高纯氦气价格</h2>
+                    <div class="flex items-end gap-4 mb-2">
+                        <div class="text-5xl font-bold text-amber-500">89.39</div>
+                        <div class="text-2xl font-semibold text-gray-700">元/立方米</div>
+                    </div>
+                    <p class="text-gray-600 mb-4">2026年3月周均价，较2月底上涨约20%。</p>
+                    <div class="flex items-center gap-2 text-amber-600">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        <span class="font-semibold">全球现货价格同期暴涨 70%-100%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 氦气在AI芯片中的应用 -->
+            <div class="card md:col-span-4 p-8 flex flex-col relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-blue"></div>
+                <div class="relative">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">氦气在AI芯片产业链中的核心应用</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <div class="bg-blue-50 rounded-xl p-6 border border-blue-100 flex flex-col items-center text-center">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-microchip fa-2x text-blue-500"></i>
+                            </div>
+                            <h3 class="font-bold text-blue-800 mb-2">光刻工艺 (EUV)</h3>
+                            <p class="text-sm text-blue-600 mb-3">7N级超高纯氦气，冷却光源系统，控制温度波动在±0.1℃以内。</p>
+                            <div class="text-xs font-semibold text-blue-500 bg-blue-100 px-2 py-1 rounded-full">占总消耗 35%+</div>
+                        </div>
+                        <div class="bg-blue-50 rounded-xl p-6 border border-blue-100 flex flex-col items-center text-center">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-atom fa-2x text-blue-500"></i>
+                            </div>
+                            <h3 class="font-bold text-blue-800 mb-2">刻蚀与沉积</h3>
+                            <p class="text-sm text-blue-600 mb-3">6N级氦气实现毫秒级均匀散热，确保刻蚀精度在±0.5nm以内。</p>
+                            <div class="text-xs font-semibold text-blue-500 bg-blue-100 px-2 py-1 rounded-full">占总消耗 40%+</div>
+                        </div>
+                        <div class="bg-blue-50 rounded-xl p-6 border border-blue-100 flex flex-col items-center text-center">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-fire-burner fa-2x text-blue-500"></i>
+                            </div>
+                            <h3 class="font-bold text-blue-800 mb-2">离子注入与退火</h3>
+                            <p class="text-sm text-blue-600 mb-3">高导热性实现均匀升温和冷却，控制晶圆温度偏差在±5℃以内。</p>
+                            <div class="text-xs font-semibold text-blue-500 bg-blue-100 px-2 py-1 rounded-full">关键工艺</div>
+                        </div>
+                        <div class="bg-blue-50 rounded-xl p-6 border border-blue-100 flex flex-col items-center text-center">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                                <i class="fa-solid fa-vial-circle-check fa-2x text-blue-500"></i>
+                            </div>
+                            <h3 class="font-bold text-blue-800 mb-2">封装与测试</h3>
+                            <p class="text-sm text-blue-600 mb-3">高精度检漏与极端环境测试，保障芯片稳定性与可靠性。</p>
+                            <div class="text-xs font-semibold text-blue-500 bg-blue-100 px-2 py-1 rounded-full">质量保障</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 广钢气体 -->
+            <div class="card md:col-span-2 p-8 flex flex-col relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-teal"></div>
+                <div class="relative">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h2 class="text-xl font-bold text-gray-800">广钢气体 (688548)</h2>
+                            <p class="text-sm text-gray-500">稳健龙头，长协保障</p>
+                        </div>
+                        <div class="text-3xl font-bold text-teal-500">+15%</div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">2025年营收</span>
+                            <span class="font-semibold text-gray-800">24.24亿元 (↑15.26%)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">2025年净利润</span>
+                            <span class="font-semibold text-gray-800">2.86亿元 (↑15.39%)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">2025.12-2026.03股价涨幅</span>
+                            <span class="font-semibold text-gray-800">+31.1%</span>
+                        </div>
+                        <div class="bg-teal-50 rounded-lg p-3 mt-4">
+                            <p class="text-sm text-teal-700"><i class="fa-solid fa-shield-halved mr-2"></i>核心优势：长协保障能力、全产业链布局、国内最大氦罐储备规模。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 华特气体 -->
+            <div class="card md:col-span-2 p-8 flex flex-col relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-purple"></div>
+                <div class="relative">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h2 class="text-xl font-bold text-gray-800">华特气体 (688268)</h2>
+                            <p class="text-sm text-gray-500">弹性先锋，特种气体领军</p>
+                        </div>
+                        <div class="text-3xl font-bold text-purple-500">+65.8%</div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">2025年营收</span>
+                            <span class="font-semibold text-gray-800">14.19亿元 (↑1.72%)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">2025年净利润</span>
+                            <span class="font-semibold text-gray-800">1.44亿元 (↓22.17%)</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span class="text-gray-600">2025.12-2026.03股价涨幅</span>
+                            <span class="font-semibold text-gray-800">+65.8%</span>
+                        </div>
+                        <div class="bg-purple-50 rounded-lg p-3 mt-4">
+                            <p class="text-sm text-purple-700"><i class="fa-solid fa-award mr-2"></i>核心优势：ASML/Gigaphoton双认证、6N级高纯氦气提纯技术、半导体市占率20%+。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 全球龙头对比 -->
+            <div class="card md:col-span-4 p-8 flex flex-col relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-gray-100"></div>
+                <div class="relative">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">全球气体龙头对比</h2>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-sm">
+                            <thead>
+                                <tr class="border-b border-gray-200">
+                                    <th class="text-left py-3 px-4 font-semibold text-gray-700">公司</th>
+                                    <th class="text-right py-3 px-4 font-semibold text-gray-700">2025年营收</th>
+                                    <th class="text-right py-3 px-4 font-semibold text-gray-700">氦气业务占比</th>
+                                    <th class="text-right py-3 px-4 font-semibold text-gray-700">股价涨幅 (2025.12-2026.03)</th>
+                                    <th class="text-left py-3 px-4 font-semibold text-gray-700">核心优势</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b border-gray-100">
+                                    <td class="py-4 px-4 font-medium text-gray-800">林德 (Linde PLC)</td>
+                                    <td class="py-4 px-4 text-right text-gray-600">340亿美元</td>
+                                    <td class="py-4 px-4 text-right text-gray-600">~10%</td>
+                                    <td class="py-4 px-4 text-right text-gray-600">+7.2%</td>
+                                    <td class="py-4 px-4 text-gray-600">全球四分之三商业氦资源，最大存储设施</td>
+                                </tr>
+                                <tr>
+                                    <td class="py-4 px-4 font-medium text-gray-800">Air Products</td>
+                                    <td class="py-4 px-4 text-right text-gray-600">-</td>
+                                    <td class="py-4 px-4 text-right text-gray-600">~15%</td>
+                                    <td class="py-4 px-4 text-right text-gray-600">+8.7%</td>
+                                    <td class="py-4 px-4 text-gray-600">超20年长协，全球最大氦气运输网络</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 短期冲击 -->
+            <div class="card md:col-span-2 p-8 flex flex-col relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-red"></div>
+                <div class="relative">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">短期冲击：库存耗尽与产能受限</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-box-archive text-red-500 mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-gray-700">库存分化显著</p>
+                                <p class="text-sm text-gray-600">头部企业可覆盖3个月以上需求，纯卡塔尔气源企业不足1个月。</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-industry text-red-500 mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-gray-700">芯片产线减产</p>
+                                <p class="text-sm text-gray-600">长鑫存储、长江存储等头部存储芯片厂部分产线减产约30%。</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-flask-vial text-red-500 mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-gray-700">技术替代探索</p>
+                                <p class="text-sm text-gray-600">中芯国际测试"氦氮混合冷却"技术，可降低氦气消耗约20%。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 长期重构 -->
+            <div class="card md:col-span-2 p-8 flex flex-col relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-teal"></div>
+                <div class="relative">
+                    <h2 class="text-xl font-bold text-gray-800 mb-4">长期重构：多元化与国产化</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-globe text-teal-500 mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-gray-700">进口来源多元化</p>
+                                <p class="text-sm text-gray-600">从卡塔尔单一来源向俄罗斯、美国、澳大利亚多元化结构转型。</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-route text-teal-500 mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-gray-700">运输通道多元化</p>
+                                <p class="text-sm text-gray-600">推进红海-苏伊士、中哈俄陆运管线、北极东北航道等替代通道。</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-gears text-teal-500 mt-1"></i>
+                            <div>
+                                <p class="font-semibold text-gray-700">产能布局重构</p>
+                                <p class="text-sm text-gray-600">加速LNG-BOG提氦等国产化路线，预计2027年自给率提升至40%。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 投资建议 -->
+            <div class="card md:col-span-4 p-8 flex flex-col relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-blue"></div>
+                <div class="relative">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-6">投资建议</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="bg-blue-50 rounded-xl p-6 border border-blue-100">
+                            <div class="flex items-center gap-2 mb-3">
+                                <i class="fa-solid fa-shield-heart text-blue-500"></i>
+                                <h3 class="font-bold text-blue-800">广钢气体 (688548.SH)</h3>
+                            </div>
+                            <p class="text-sm text-blue-700 mb-3">稳健配置首选。长协保障能力强，全产业链布局完善，在手订单同比增长112%。LNG-BOG提氦项目将受益于国产化趋势。</p>
+                            <div class="text-xs font-semibold text-blue-500">推荐评级</div>
+                        </div>
+                        <div class="bg-blue-50 rounded-xl p-6 border border-blue-100">
+                            <div class="flex items-center gap-2 mb-3">
+                                <i class="fa-solid fa-rocket text-blue-500"></i>
+                                <h3 class="font-bold text-blue-800">华特气体 (688268.SH)</h3>
+                            </div>
+                            <p class="text-sm text-blue-700 mb-3">弹性品种首选。唯一通过ASML双认证，半导体氦气市占率20%+。2026年产能将提升至150吨，业绩弹性显著。</p>
+                            <div class="text-xs font-semibold text-blue-500">推荐评级</div>
+                        </div>
+                        <div class="bg-blue-50 rounded-xl p-6 border border-blue-100">
+                            <div class="flex items-center gap-2 mb-3">
+                                <i class="fa-solid fa-earth-americas text-blue-500"></i>
+                                <h3 class="font-bold text-blue-800">全球龙头</h3>
+                            </div>
+                            <p class="text-sm text-blue-700 mb-3">关注林德、Air Products等。拥有全球布局的氦气资源与稳定现金流，抗风险能力更强，具备长期配置价值。</p>
+                            <div class="text-xs font-semibold text-blue-500">关注</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 风险提示 -->
+            <div class="card md:col-span-4 p-8 flex flex-col relative">
+                <div class="absolute top-0 left-0 w-full h-full highlight-gradient-amber"></div>
+                <div class="relative">
+                    <h2 class="text-2xl font-bold text-gray-800 mb-4">风险提示</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-triangle-exclamation text-amber-500 mt-1"></i>
+                            <p class="text-gray-700">地缘冲突进一步升级，导致霍尔木兹海峡长期封锁或卡塔尔产能进一步受损。</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-triangle-exclamation text-amber-500 mt-1"></i>
+                            <p class="text-gray-700">全球氦气产能快速恢复，导致氦气价格回调，A股标的估值承压。</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-triangle-exclamation text-amber-500 mt-1"></i>
+                            <p class="text-gray-700">半导体行业复苏不及预期，AI芯片需求增长放缓，影响氦气需求。</p>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-triangle-exclamation text-amber-500 mt-1"></i>
+                            <p class="text-gray-700">国产化进程不及预期，LNG-BOG提氦等技术规模化应用延迟。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    // 全球氦气供应结构图表
+    const supplyCtx = document.getElementById('supplyChart').getContext('2d');
+    new Chart(supplyCtx, {
+        type: 'doughnut',
+        data: {
+            labels: ['美国', '卡塔尔', '阿尔及利亚', '俄罗斯', '其他'],
+            datasets: [{
+                label: '产能占比',
+                data: [42, 33, 10, 8, 7],
+                backgroundColor: [
+                    'rgba(59, 130, 246, 0.7)',
+                    'rgba(168, 85, 247, 0.7)',
+                    'rgba(20, 184, 166, 0.7)',
+                    'rgba(245, 158, 11, 0.7)',
+                    'rgba(107, 114, 128, 0.7)'
+                ],
+                borderColor: [
+                    'rgba(59, 130, 246, 1)',
+                    'rgba(168, 85, 247, 1)',
+                    'rgba(20, 184, 166, 1)',
+                    'rgba(245, 158, 11, 1)',
+                    'rgba(107, 114, 128, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            plugins: {
+                legend: {
+                    position: 'right',
+                    labels: {
+                        boxWidth: 12,
+                        padding: 15,
+                        font: {
+                            size: 11
+                        }
+                    }
+                }
+            },
+            cutout: '60%'
+        }
+    });
+
+    // 中国氦气进口结构变化图表
+    const importCtx = document.getElementById('importChart').getContext('2d');
+    new Chart(importCtx, {
+        type: 'bar',
+        data: {
+            labels: ['卡塔尔', '俄罗斯', '美国', '其他'],
+            datasets: [
+                {
+                    label: '2025年 (占比)',
+                    data: [54.6, 18.2, 5.1, 22.1],
+                    backgroundColor: 'rgba(168, 85, 247, 0.6)',
+                    borderColor: 'rgba(168, 85, 247, 1)',
+                    borderWidth: 1
+                },
+                {
+                    label: '2026年1-2月 (占比)',
+                    data: [41.0, 58.0, 8.0, 13.0], // 数据做了调整以适应图表显示
+                    backgroundColor: 'rgba(20, 184, 166, 0.6)',
+                    borderColor: 'rgba(20, 184, 166, 1)',
+                    borderWidth: 1
+                }
+            ]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                x: {
+                    stacked: false,
+                    grid: {
+                        display: false
+                    }
+                },
+                y: {
+                    stacked: false,
+                    beginAtZero: true,
+                    max: 65,
+                    ticks: {
+                        callback: function(value) {
+                            return value + '%'
+                        }
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    position: 'top',
+                    labels: {
+                        boxWidth: 12,
+                        padding: 15,
+                        font: {
+                            size: 11
+                        }
+                    }
+                }
+            }
+        }
+    });
+</script>
+</html>
